@@ -3,10 +3,10 @@
 <body>
 <div class="form-container">
     <h1>Tincat</h1>
-    <form action="" >
-        <input type="text" placeholder="Pseudo">
-        <input type="password" placeholder="Password">
-        <input type="submit" placeholder="Submit">
+    <form action="functions/setUser.php" method="post">
+        <input type="text" placeholder="Pseudo" name="pseudo">
+        <input type="password" placeholder="Password" name="password">
+        <input type="submit" placeholder="Submit" value="Register">
     </form>
 </div>
 </body>

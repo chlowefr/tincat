@@ -22,9 +22,25 @@ body{
         justify-content: center;
 
         input{
+            color: white;
+            font-size: 20px;
+            font-weight: 200;
             height: 30px;
-            width: 200px;
+            width: 250px;
             margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            border-bottom: solid 1px white;
+            &:last-child{
+                background-color: white;
+                color: black;
+                height: 40px;
+                font-weight: 300;
+            }
+            &::placeholder{
+                color: white;
+            }
         }
+        
     }
   }

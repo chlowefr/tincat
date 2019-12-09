@@ -1,5 +1,30 @@
-$color: red;
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #dc4587, #ff8941);
+  }
+  .form-container{
+      width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-h1{
-    color: $color;
-}
+    h1{
+      font-family: 'Righteous', cursive;
+      font-size: 45px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        input{
+            height: 30px;
+            width: 200px;
+            margin-top: 20px;
+        }
+    }
+  }

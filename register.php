@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<?php require "head.php" ?>
+
 <body>
-    <form action="">
-        <input type="text" placeholder="pseudo">
-        <input type="password" placeholder="password">
+<div class="form-container">
+    <h1>Tincat</h1>
+    <form action="" >
+        <input type="text" placeholder="Pseudo">
+        <input type="password" placeholder="Password">
+        <input type="submit" placeholder="Submit">
     </form>
+</div>
 </body>
 </html>

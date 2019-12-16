@@ -24,7 +24,7 @@ $req = $db->prepare("INSERT INTO users (pseudo, email, password) VALUES(:pseudo,
     else {
         $req->bindParam(":pseudo", $_POST["pseudo"]);
     }
-
+    
     // Ajouter un input confirm password et vérifier si les deux sont égaux
     
     if($_POST["password"] === $_POST["confirm-password"]){

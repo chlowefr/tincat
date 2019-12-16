@@ -16,7 +16,7 @@ $req = $db->prepare("INSERT INTO users (pseudo, email, password) VALUES(:pseudo,
 
 // Avant d'insérer en base de données faire les vérifications suivantes
     // Vérifier si le pseudo ou le mot de passe est vide
-    if($_POST["pseudo"] == "" || $_POST["password"] == "" || $_POST["email"] == ""){
+    if(empty($_POST["pseudo"]) || empty($_POST["password"]) || empty($_POST["email"])){
     echo "Veuillez renseigner tous les champs.";
     //Redirection vers la page register.php
     header("Location: ../register.php?inputNone=Veuillez renseigner tous les champs.");

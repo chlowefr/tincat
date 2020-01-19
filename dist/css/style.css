@@ -27,6 +27,12 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 35px;
+  color: white;
+}
+
 .section1 {
   display: flex;
   justify-content: center;

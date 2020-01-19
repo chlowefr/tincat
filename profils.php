@@ -32,9 +32,9 @@ while($result = $req->fetch(PDO::FETCH_ASSOC)){
     ?>
 
     <div class="pseudo-container">
-        <strong><?php echo $result['pseudo'] ?></strong>
+        <strong><?php echo $result['pseudo']; ?></strong>
         <button><a href="functions/deleteUser.php?user_id=<?= $result['id'] ?>">Supprimer</a></button>
-        <button><a href="">Edit</a></button> <!-- Utiliser la fonction UPDATE-->
+        <button><a href="userEditForm.php?user_id=<?= $result['id'] ?>">Edit</a></button>
     </div>
     
     <?php

@@ -96,7 +96,10 @@ a {
 }
 
 .bonjour-pseudo {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .container-pseudo-suppr, .pseudo-container {
@@ -129,6 +132,11 @@ a {
 
 .disconnect, .message-profil {
   margin-top: 50px;
+}
+
+.error-message {
+  margin-bottom: 50px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

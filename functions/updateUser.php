@@ -10,8 +10,8 @@ $pseudo = $_POST["pseudo"];
 $req = $db->prepare("UPDATE users SET pseudo=? WHERE id=?");
 $req->execute([$pseudo, $id]);
 
-$message = "Bravo, le pseudo a bien été modifié !";
-        header("Location: ../profils.php?message=$message");
+$messageUpdate = "Bravo, le pseudo a bien été modifié !";
+        header("Location: ../profils.php?messageUpdate=$messageUpdate");
 
 
 

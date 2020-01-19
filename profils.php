@@ -8,14 +8,14 @@ require("head.php");
     }
 ?>
 <div class="section1">
-<div class="bonjour-pseudo"><?php echo "Bonjour " . $_SESSION["pseudo"];?></div>
+<div class="bonjour-pseudo"><?php echo "Bonjour " . $_SESSION["pseudo"] . " !";?></div>
 
 
-<p>
+<p class="error-message">
    <?php
         //Afficher le succès du changement de pseudo
-        if(isset($_GET["message"])){
-            echo $_GET["message"];
+        if(isset($_GET["messageUpdate"])){
+            echo $_GET["messageUpdate"];
         }
 ?> 
 </p>

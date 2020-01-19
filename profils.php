@@ -10,7 +10,17 @@ require("head.php");
 <div class="section1">
 <div class="bonjour-pseudo"><?php echo "Bonjour " . $_SESSION["pseudo"];?></div>
 
-<?php 
+
+<p>
+   <?php
+        //Afficher le succès du changement de pseudo
+        if(isset($_GET["message"])){
+            echo $_GET["message"];
+        }
+?> 
+</p>
+<?php
+
 // *****************************************************
 //Afficher tous les utilisateurs de la BDD sauf moi 
 

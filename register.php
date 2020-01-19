@@ -12,22 +12,10 @@
         <input type="submit" placeholder="Submit" value="Register">
     </form>
     <?php
-        //Afficher les echo pour erreurs succès
+        //Afficher les messages d'erreurs
 
-        if(isset($_GET["inputNone"])){
-            echo "<div class=\"error\">";
-            echo $_GET["inputNone"];
-            echo "</div>";
-        }
-        else if(isset($_GET["errorPassword"])){
-            echo "<div class=\"error\">";
-            echo $_GET["errorPassword"];
-            echo "</div>";
-        }
-        else if(isset($_GET["success"])){
-            echo "<div class=\"error\">";
-            echo $_GET["success"];
-            echo "</div>";
+        if(isset($_GET["message"])){
+            echo $_GET["message"];
         }
         ?>
 
